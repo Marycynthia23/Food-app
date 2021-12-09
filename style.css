@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    border: 1px;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 400px;
+    background: #fcfcfd;
+    box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E2E8F0;
+}
+.fa-search{
+    font-size: 20px;
+    color: #3a3a39;
+}
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.hamburger {
+    display: inline-block;
+}
+ul{
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #3a3a39;
+}
+ .middle{
+    height: 3px;
+    width: 15px;
+    
+}
+.top{
+    bottom: 14px;
+    height: 3px;
+    width: 25px;
+ 
+
+}
+.bottom{
+    top: 20px;
+    height: 3px;
+    width: 25px;
+   
+
+}
+.last{
+    top: 20px;
+    height: 3px;
+    width: 15px;
+}
+
+.nav-menu {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #29B44B;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    color: #2AB44D
+}
+.top-scroll-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+
+}
+.scroll-items{
+    width: 100px;
+    padding: 10px 20px;
+    background: #CDEFDB;
+    border-radius: 8px;
+    color: #3a3a39;
+    text-align: center;
+    font-size: 14px;
+    
+}
+.popular-foods-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-heading{
+    color: #3a3a39;
+
+}
+.popular-foods .view-all{
+    border: 1px solid #2ab44d;
+    padding: 6px 25px;
+    color: #2ab44d;
+    border-radius: 15px;
+    font-size: 14px;
+
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.food-cards{
+    position: relative;
+    width: 110px;
+    min-height: 130px;
+    padding: 10px auto;
+    border-radius: 10px;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.726);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.food-cards img{
+    border-radius: 10px;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+/* .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  } */
+  .card-text {
+    position: absolute;
+    bottom: 8px;
+    left: 5px;
+    color: #fff;
+    padding: 10px 5px;
+    
+  }  
+  .icons,
+  .star-rating{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ededed;
+  }
+  .hrt-icon{
+    color: #ededed;
+  }
+  .food-title{
+      font-size: 16px;
+      font-weight: 600;
+  }
+  .footer-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 6px 0 6px 0;
+      padding: 10px 0px;
+      /* position: fixed; */
+      /* margin-bottom: 0px; */
+
+  }
+  .footer-icons{
+      text-decoration: none;
+      list-style-type: none;
+      padding: 10px 10px;
+  }
+  .footer-icons a i{
+      font-size: 20px;
+      font-weight: 600;
+      color: #3a3a39;
+  }
+  .container{
+      padding-bottom: 0px;
+  }
+@media screen and (max-width: 789px){
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .hamburger.active .bar:nth-child(4) {
+        opacity: 0;
+    }
+
+}
+
+
+/* html ,body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #0141bb;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+input[type = "checkbox"]{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+.bar{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.bar .middle{
+    height: 6px;
+    width: 80px;
+    background: #fff;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.3s ease;
+
+}
+.bar .top{
+    bottom: 14px;
+    height: 6px;
+    width: 80px;
+    background: #fff;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.3s ease;
+
+}
+.bar .bottom{
+    top: 20px;
+    height: 6px;
+    width: 80px;
+    background: #fff;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.3s ease;
+
+}
+input[type="checkbox"]:checked  .bar .top{
+    transform: rotate(-45deg);
+    width: 70px;
+    transform-origin: right;
+    top: -25px;
+}
+input[type="checkbox"]:checked  .bar .bottom{
+    transform: rotate(45deg);
+    width: 70px;
+    transform-origin: right;
+    top: 25px;
+}
+input[type="checkbox"]:checked  .bar .middle{
+    transform: translateX(20px);
+    opacity: 0;
+} */
